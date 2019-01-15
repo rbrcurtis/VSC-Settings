@@ -63,5 +63,31 @@
     {
         "key": "shift+cmd+[",
         "command": "-workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+.",// should be `>` key
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "<${1:${TM_SELECTED_TEXT}}>"
+        },
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "shift+,",// should be `<` key
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "<${1:${TM_SELECTED_TEXT}}>"
+        },
+        "when": "editorHasSelection"
     }
 ]

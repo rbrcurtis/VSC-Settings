@@ -17,5 +17,7 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "editor.tabSize": 2,
-    "workbench.editor.enablePreviewFromQuickOpen": false
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.statusBar.feedback.visible": false,
+    "debug.node.autoAttach": "on"
 }
