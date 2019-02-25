@@ -65,29 +65,41 @@
         "command": "-workbench.action.previousEditor"
     },
     {
-        "key": "ctrl+alt+down",
-        "command": "editor.action.insertCursorBelow",
+        "key": "shift+alt+enter",
+        "command": "editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "-editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+cmd+down",
-        "command": "-editor.action.insertCursorBelow",
+        "key": "shift+alt+i",
+        "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
         "when": "editorTextFocus"
     },
     {
-        "key": "shift+.",// should be `>` key
-        "command": "editor.action.insertSnippet",
-        "args": {
-            "snippet": "<${1:${TM_SELECTED_TEXT}}>"
-        },
-        "when": "editorHasSelection"
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.deleteWordLeft",
+        "when": "terminalFocus"
     },
     {
-        "key": "shift+,",// should be `<` key
-        "command": "editor.action.insertSnippet",
-        "args": {
-            "snippet": "<${1:${TM_SELECTED_TEXT}}>"
-        },
-        "when": "editorHasSelection"
+        "key": "alt+backspace",
+        "command": "-workbench.action.terminal.deleteWordLeft",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.switchWindow"
+    },
+    {
+        "key": "f5",
+        "command": "workbench.action.reloadWindow"
     }
 ]
