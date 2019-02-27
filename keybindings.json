@@ -101,5 +101,33 @@
     {
         "key": "f5",
         "command": "workbench.action.reloadWindow"
+    },
+    {
+        "key": "alt+right",
+        "command": "cursorWordRight"
+    },
+    {
+        "key": "alt+right",
+        "command": "-cursorWordPartRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "-cursorWordEndRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorWordLeft"
+    },
+    {
+        "key": "alt+left",
+        "command": "-cursorWordPartLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "-cursorWordStartLeft",
+        "when": "textInputFocus"
     }
 ]
